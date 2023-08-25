@@ -1,0 +1,62 @@
+  <button ejs-button (click)="addGroupNode()">Add Group Node</button>
+  <button ejs-button (click)="addGroup()">Add Group</button>
+  <button ejs-button (click)="ungroup()">UnGroup</button>
+  <button ejs-button (click)="updateGroup()">Update Group</button>
+  <ejs-diagram #diagram
+    width="1500px"
+    height="600px">
+    <e-nodes>
+      <e-node id="node1"
+        [offsetX]="100"
+        [offsetY]="100"
+        [height]="100"
+        [width]="100"
+        [style]="style">
+        <e-node-annotations>
+          <e-node-annotation content="Node1"></e-node-annotation>
+        </e-node-annotations>
+      </e-node>
+      <e-node id="node2"
+        [offsetX]="300"
+        [offsetY]="100"
+        [height]="100"
+        [width]="100"
+        [style]="style">
+        <e-node-annotations>
+          <e-node-annotation content="Node2"></e-node-annotation>
+        </e-node-annotations>
+      </e-node>
+      <e-node id="group1" [children]="children" [style]="groupStyle">
+        <e-node-annotations>
+          <e-node-annotation content="Group Node"></e-node-annotation>
+        </e-node-annotations>
+      </e-node>
+      <e-node id="node3"
+      [offsetX]="200"
+      [offsetY]="250"
+      [height]="100"
+      [width]="100"
+      [style]="style">
+      <e-node-annotations>
+        <e-node-annotation content="Node3"></e-node-annotation>
+      </e-node-annotations>
+    </e-node>
+    <e-node id="node4"
+      [offsetX]="400"
+      [offsetY]="350"
+      [height]="100"
+      [width]="100"
+      [style]="style">
+      <e-node-annotations>
+        <e-node-annotation content="Node4"></e-node-annotation>
+      </e-node-annotations>
+    </e-node>
+    <e-node id="nestedGroup" [children]="nestedChild"></e-node>
+    </e-nodes>
+    <e-connectors>
+      <e-connector id="connector1" sourceID="node1" targetID="node2"></e-connector>
+      <e-connector id="connector2" sourceID="node2" targetID="node3"></e-connector>
+      <e-connector id="connector3" sourceID="node3" targetID="node1"></e-connector>
+    </e-connectors>
+  </ejs-diagram>
+
