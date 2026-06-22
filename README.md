@@ -1,6 +1,6 @@
 # How to Group Nodes and Connectors in the Angular Diagram Component
 
-A quick start Angular project that shows how to group nodes and connectors in an Angular Diagram component. This project includes code snippets to create and update groups dynamically. It also includes code snippets to add annotations to a group and create a nested group.
+A quick start Angular project that shows how to group nodes and connectors in an [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram) component. This project includes code snippets to create and update groups dynamically. It also includes code snippets to add annotations to a group and create a nested group.
 
 Refer to the grouping documentation for the Syncfusion&reg; Angular Diagram component: 
 https://ej2.syncfusion.com/angular/documentation/diagram/group
